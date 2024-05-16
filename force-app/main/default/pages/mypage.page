@@ -1,0 +1,22 @@
+<apex:page standardController="account">
+
+  <apex:form >
+  <apex:pageBlock >
+  <apex:image url="{!$Resource.Walmartlogo}" width="100" height="50"/>
+  <marquee>
+  <b style="color:blue;Font-size:30px">
+  Welcome {!$User.FirstName}
+  </b>
+  </marquee>
+  <apex:pageBlockSection title="Company Information"  columns="3">
+  <apex:inputField value="{!account.name}" label="Company Name"/>
+  <apex:inputField value="{!account.phone}" label="Phone Number"/>
+  <apex:inputField value="{!account.rating}" label="Give Rating"/>
+  </apex:pageBlockSection>
+  <apex:pageblockButtons >
+  <apex:commandButton value="{!$Label.Save}" action="{!save}"/>
+  <apex:commandButton value="CANCEL" action="{!cancel}"/>
+  </apex:pageblockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

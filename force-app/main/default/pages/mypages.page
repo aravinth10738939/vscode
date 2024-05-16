@@ -1,0 +1,12 @@
+<apex:page controller="Myinvoice">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection title="Invoice informatin" columns="3">
+<apex:inputText value="{!Myinvoice.name}"  />
+<apex:inputText value="{!Myinvoice.Description__c}"  />
+</apex:pageBlockSection>
+<apex:commandButton value="Save" action="{!plsave}"/>
+</apex:pageBlock>
+</apex:form>
+  
+</apex:page>

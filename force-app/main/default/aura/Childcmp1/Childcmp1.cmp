@@ -1,0 +1,20 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+ 
+    <aura:registerEvent name="childevent" type="c:Compevent1" />
+    
+<aura:attribute name ="Name" type="String"/>
+<aura:attribute name ="Age" type="String"/>
+<aura:attribute name ="City" type="String"/>
+    
+ <aura:attribute name ="Email" type="String"/>
+    
+<br/> <div> this is child component</div><br/>
+<p>Name from parent  <lightning:formattedText value="{!v.Name}" /></p>
+<p>Age from parent   <lightning:formattedText value="{!v.Age}" /></p>
+<p>City from parent  <lightning:formattedText value="{!v.City}" /></p>
+    
+    <lightning:input type="email" label="Enter Email" value="{!v.Email}" />   
+    
+    <lightning:button label="fireevent" title="Neutral action" onclick="{! c.handleClick }"/>
+   
+</aura:component>

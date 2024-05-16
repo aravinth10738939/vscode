@@ -1,0 +1,13 @@
+<apex:page controller="MYAccount">
+ <apex:form >
+ <apex:pageBlock >
+ <apex:pageblockSection columns="" >
+ <apex:inputText value="{!MYAccount.name}"/>
+ <apex:inputText value="{!MYAccount.Rating}"/>
+ <apex:inputText value="{!MYAccount.Phone}"/>
+ </apex:pageblockSection>
+ <br></br>
+ <apex:commandButton value="DoSave" action="{!Dosave}"/>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

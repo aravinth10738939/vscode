@@ -1,0 +1,13 @@
+<aura:component >
+    
+<aura:handler name ="childevent" event ="c:Compevent1" action ="{!c.handleevent}"/>
+ 
+    <aura:attribute name="childmsg" type="string" />
+    <p>Message from Child  <lightning:formattedText value="{!v.childmsg}" /></p><br></br>
+
+    <c:Childcmp1 Name = "ARAVINTH" Age ="22" City="Karur"/>
+    
+    
+ 
+<lightning:button label="Getname" title="Neutral action" onclick="{! c.handleClick }"/>
+</aura:component>

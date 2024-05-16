@@ -1,0 +1,11 @@
+<template>
+    <lightning-card >
+    <ul>
+        <template for:each={items} for:item="item">
+          <li key={item}>
+            <h1> {item}</h1>
+          </li>
+        </template>
+    </ul>
+</lightning-card>
+</template>

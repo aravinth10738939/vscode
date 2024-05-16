@@ -1,0 +1,13 @@
+<aura:component controller="contactdetails" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Email" type="String"/>
+    <aura:attribute name="LastName" type="String"/>
+    <lightning:input type="email" label="Enter Email" 
+                     placeholder="example: email@gmail.com"
+                     value="{!v.Email}"
+                     />
+    
+    <lightning:button label="Show Name" onclick="{!c.handle}"/>
+    
+    <lightning:input label="Contact Name"  value="{!v.LastName}" /> 
+    
+</aura:component>
